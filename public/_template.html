@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    SEVEN Digital Studio - Master Template
+    Use this file as the starting point for all new pages.
+    1. Copy this file
+    2. Rename it (e.g., about.html)
+    3. Update Page Title and Meta Description
+    4. Replace content inside <main>
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        SEO: Basic Meta Tags 
+        Crucial for search engine ranking and click-through rates.
+    -->
+    <title>Page Title | SEVEN Digital Studio</title>
+    <meta name="description" content="Professional web design and hosting services in Ghana. We build fast, reliable websites for businesses.">
+    <meta name="keywords" content="web design ghana, website hosting, digital agency, accra, web development">
+    <meta name="author" content="SEVEN Digital Studio">
+    <meta name="robots" content="index, follow">
+
+    <!-- 
+        Social Media: Open Graph / Facebook 
+        Controls how the link looks when shared on social platforms.
+    -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sevendigital.gh/"> <!-- UPDATE PER PAGE -->
+    <meta property="og:title" content="SEVEN Digital Studio | Professional Web Design">
+    <meta property="og:description" content="Professional web design and hosting services in Ghana.">
+    <meta property="og:image" content="https://sevendigital.gh/assets/img/og-image.jpg"> <!-- 1200x630px ideal -->
+
+    <!-- 
+        Social Media: Twitter Card 
+    -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://sevendigital.gh/">
+    <meta name="twitter:title" content="SEVEN Digital Studio">
+    <meta name="twitter:description" content="Professional web design and hosting services in Ghana.">
+    <meta name="twitter:image" content="https://sevendigital.gh/assets/img/og-image.jpg">
+
+    <!-- 
+        Favicons 
+        (Generate these later using realfavicongenerator.net)
+    -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+
+    <!-- 
+        Fonts: Google Fonts 
+        Outfit (Headings) + Inter (Body)
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+
+    <!-- 
+        Stylesheets 
+        'main.css' handles all imports (base, components, layout).
+    -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <!-- 
+        Global Header 
+        Contains Logo and Main Navigation.
+    -->
+    <header class="site-header" id="site-header">
+        <div class="container">
+            <div class="site-header__inner">
+                <!-- Logo -->
+                <a href="index.html" class="logo" aria-label="SEVEN Digital Studio Home">
+                    SEVEN
+                </a>
+
+                <!-- Navigation -->
+                <!-- aria-label distinguishes this nav from others (like footer nav) -->
+                <nav class="main-nav" aria-label="Main Navigation">
+                    <ul class="main-nav__list">
+                        <li><a href="index.html" class="main-nav__link">Home</a></li>
+                        <li><a href="services.html" class="main-nav__link">Services</a></li>
+                        <li><a href="pricing.html" class="main-nav__link">Pricing</a></li>
+                        <li><a href="portfolio.html" class="main-nav__link">Portfolio</a></li>
+                        <li><a href="contact.html" class="btn btn--primary">Get Started</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Menu Toggle (Implemented later in JS) -->
+                <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="mobile-toggle__bar"></span>
+                    <span class="mobile-toggle__bar"></span>
+                    <span class="mobile-toggle__bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 
+        Main Content Area 
+        The unique content for each page goes here.
+    -->
+    <main id="main-content">
+        
+        <!-- Page Header / Hero Section (Optional) -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Page Title</h1>
+                <p class="lead">Brief subtitle or introduction for this page.</p>
+            </div>
+        </section>
+
+        <!-- Content Sections -->
+        <section class="section">
+            <div class="container">
+                <p>Content goes here...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 
+        Global Footer 
+        Copyright, Links, Socials.
+    -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__inner">
+                <div class="site-footer__brand">
+                    <span class="logo">SEVEN</span>
+                    <p>Digital Excellence for Ghanaian Business.</p>
+                </div>
+                
+                <nav class="footer-nav" aria-label="Footer Navigation">
+                    <ul class="footer-nav__list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="site-footer__bottom">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> SEVEN Digital Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 
+        Scripts 
+        type="module" allows using import/export syntax in app.js
+    -->
+    <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

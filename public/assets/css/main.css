@@ -1,0 +1,30 @@
+/* 
+    MAIN.CSS
+    Central hub for all stylesheets.
+    Order is critical: Reset -> Base -> Layout -> Components -> Utilities
+*/
+
+/* 1. Base (Resets, Variables, Typography) */
+@import "base/variables.css";
+@import "base/reset.css";
+@import "base/typography.css";
+@import "base/animations.css";
+
+
+/* 2. Layout (Grid, Header, Footer) */
+@import "layout/grid.css";
+@import "layout/header.css";
+@import "layout/footer.css";
+
+/* 3. Components (Buttons, Cards, Forms) */
+@import "components/buttons.css";
+@import "components/hero.css";
+@import "components/cards.css";
+@import "components/loader.css";
+@import "components/faq.css";
+@import "components/pricing.css";
+@import "components/forms.css";
+@import "components/cta.css";
+
+/* 4. Utilities (Helpers) */
+/* e.g. .text-center, .mt-4 */

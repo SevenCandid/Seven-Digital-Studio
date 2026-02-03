@@ -1,0 +1,63 @@
+/* 
+    COMPONENTS: CTA
+    Global Call-to-Action section found at the bottom of pages.
+*/
+
+.cta-section {
+    position: relative;
+    padding: var(--spacing-2xl) 0;
+    background: var(--color-primary);
+    background: linear-gradient(135deg, var(--color-primary) 0%, #020617 100%);
+    color: white;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Subtle background glow effect */
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.2) 0%, rgba(37, 99, 235, 0) 70%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.cta-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.cta-section h2 {
+    color: white;
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: var(--spacing-md);
+    letter-spacing: -0.02em;
+}
+
+.cta-section .lead {
+    color: #cbd5e1; /* Slate 300 */
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Button override for dark background */
+.cta-section .btn--primary {
+    background-color: white;
+    color: var(--color-primary);
+    border: 2px solid white;
+}
+
+.cta-section .btn--primary:hover {
+    background-color: transparent;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(255, 255, 255, 0.1);
+}

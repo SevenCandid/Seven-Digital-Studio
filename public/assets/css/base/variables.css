@@ -1,0 +1,66 @@
+:root {
+    /* 
+     * DESIGY SYSTEM: TOKENS
+     * Theme: Professional, Clean, Trustworthy
+     */
+
+    /* Colors: Slate & Royal Blue */
+    --color-primary: #0F172A;
+    /* Deep Slate - Headings, Footer, Strong brand elements */
+    --color-primary-light: #1E293B;
+    --color-accent: #2563EB;
+    /* Royal Blue - CTAs, Links, Active States */
+    --color-accent-hover: #1D4ED8;
+
+    --color-bg: #FFFFFF;
+    /* Main background */
+    --color-bg-alt: #F8FAFC;
+    /* Secondary background (Slate 50) */
+
+    --color-text: #334155;
+    /* Slate 700 - Body Text (softer than black) */
+    --color-text-light: #64748B;
+    /* Slate 500 - Meta text */
+    --color-text-inv: #FFFFFF;
+    /* Inverted text */
+
+    --color-border: #E2E8F0;
+    /* Slate 200 - Borders */
+
+    /* Spacing: 4px Grid System */
+    --spacing-xs: 0.5rem;
+    /* 8px */
+    --spacing-sm: 1rem;
+    /* 16px */
+    --spacing-md: 1.5rem;
+    /* 24px */
+    --spacing-lg: 3rem;
+    /* 48px */
+    --spacing-xl: 5rem;
+    /* 80px */
+    --spacing-2xl: 8rem;
+    /* 128px */
+
+    /* Typography */
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 20px;
+    --radius-full: 9999px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+    /* 
+     * Breakpoints (Reference Only)
+     * Mobile: Default
+     * Tablet: 768px
+     * Desktop: 1024px
+     * Container: 1200px
+     */
+}

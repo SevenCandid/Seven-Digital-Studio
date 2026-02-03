@@ -1,0 +1,119 @@
+/* 
+    COMPONENTS: PRICING
+    Specific styles for pricing tables to ensure they fit well on laptops.
+*/
+
+.pricing-card {
+    position: relative;
+    padding: var(--spacing-lg);
+    /* Default to large padding */
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-lg);
+    transition:
+        transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+        box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 0.4s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Feature list inside pricing needs consistent alignment */
+.pricing-card .feature-list {
+    text-align: left;
+    margin: var(--spacing-md) 0 auto;
+    /* Push button to bottom */
+}
+
+.price-tag {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: var(--spacing-sm) 0;
+    color: var(--color-primary);
+}
+
+.price-tag--accent {
+    color: var(--color-accent);
+}
+
+.price-suffix {
+    font-size: 1rem;
+    color: var(--color-text-light);
+    font-weight: 400;
+}
+
+/* BORDER & HIGHLIGHT VARIANTS */
+.pricing-card--standard {
+    border-top: 4px solid var(--color-primary);
+}
+
+.pricing-card--featured {
+    border-top: 4px solid var(--color-accent);
+    box-shadow: var(--shadow-md);
+    transform: scale(1.02);
+    z-index: 1;
+    /* Sit above others */
+}
+
+.pricing-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-accent);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+}
+
+.plan-label {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-xs);
+}
+
+.plan-label--standard {
+    background: var(--color-bg-alt);
+    color: var(--color-text-light);
+}
+
+.plan-label--featured {
+    background: #eff6ff;
+    /* Light Blue */
+    color: var(--color-accent);
+}
+
+/* COMPACT MODE FOR LAPTOPS (Max-Width 1366px) */
+@media (max-width: 1366px) {
+    .pricing-card {
+        padding: var(--spacing-md);
+        /* Reduce padding from 3rem to 1.5rem */
+    }
+
+    .price-tag {
+        font-size: 2rem;
+        /* Reduce font size */
+    }
+
+    .pricing-card h2 {
+        font-size: 1.5rem;
+        /* Reduce heading size */
+    }
+}
