@@ -52,14 +52,32 @@ export function initHeroEffects() {
     }
 
     // Cursor tracking
-    let mouseX = 0;
-    let mouseY = 0;
+    const rect = heroSection.getBoundingClientRect();
+    let mouseX = rect.width / 2;
+    let mouseY = rect.height / 2;
+
+    const updatePosition = (x, y) => {
+        const bounds = heroSection.getBoundingClientRect();
+        mouseX = x - bounds.left;
+        mouseY = y - bounds.top;
+    };
 
     heroSection.addEventListener('mousemove', (e) => {
-        const rect = heroSection.getBoundingClientRect();
-        mouseX = e.clientX - rect.left;
-        mouseY = e.clientY - rect.top;
+        updatePosition(e.clientX, e.clientY);
     });
+
+    // Touch support for mobile
+    heroSection.addEventListener('touchstart', (e) => {
+        if (e.touches.length > 0) {
+            updatePosition(e.touches[0].clientX, e.touches[0].clientY);
+        }
+    }, { passive: true });
+
+    heroSection.addEventListener('touchmove', (e) => {
+        if (e.touches.length > 0) {
+            updatePosition(e.touches[0].clientX, e.touches[0].clientY);
+        }
+    }, { passive: true });
 
     let time = 0;
 
