@@ -35,6 +35,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/pages/contact.css">
 </head>
 
 <body>
@@ -77,22 +78,18 @@
     <main id="main-content">
 
         <!-- Page Header -->
-        <section class="page-header text-center"
-            style="padding: var(--spacing-lg) 0; background-color: var(--color-bg-alt);">
+        <section class="contact-header text-center">
             <div class="container">
-                <h1 class="hero-title reveal-typewriter" style="font-size: 2.5rem;">Let's Build Something Great</h1>
+                <h1 class="hero-title reveal-typewriter">Let's Build Something Great</h1>
                 <p class="lead reveal-typewriter">Tell us about your project or just say hello.</p>
             </div>
         </section>
 
         <section class="section">
             <div class="container">
-                <div class="grid grid--2">
+                <div class="contact-grid">
 
-                    <!-- 
-                        CONTACT INFO (Left Column)
-                        Conversion Strategy: Push WhatsApp first. It's high-trust and low-friction in Ghana.
-                    -->
+                    <!-- CONTACT INFO -->
                     <div class="contact-info">
                         <h2 class="reveal-typewriter">Get in Touch</h2>
                         <p class="mb-lg reveal-typewriter">The fastest way to reach us is via WhatsApp. We typically
@@ -100,43 +97,32 @@
                             on business days.</p>
 
                         <!-- Primary CTA -->
-                        <div class="card" style="border-left: 4px solid #25D366; margin-bottom: var(--spacing-lg);">
-                            <h3 style="font-size: 1.25rem;">WhatsApp Us</h3>
-                            <p style="font-size: 0.9rem; margin-bottom: var(--spacing-sm);">Chat directly with a project
-                                manager.</p>
-                            <a href="https://wa.me/233549437374" class="btn btn--primary"
-                                style="background-color: #25D366; color: white; width: 100%;">Open WhatsApp Chat</a>
+                        <div class="card whatsapp-card">
+                            <h3 class="reveal-typewriter">WhatsApp Us</h3>
+                            <p class="reveal-typewriter">Chat directly with a project manager.</p>
+                            <a href="https://wa.me/233549437374" class="btn whatsapp-btn">
+                                <span>Open WhatsApp Chat</span>
+                            </a>
                         </div>
 
                         <!-- Secondary Contact Methods -->
-                        <div class="contact-method mb-md">
-                            <h4 style="margin-bottom: 0.25rem;">Email Us</h4>
-                            <a href="mailto:frankbediako38@gmail.com"
-                                style="color: var(--color-accent); text-decoration: none; font-weight: 500;">frankbediako38@gmail.com</a>
+                        <div class="contact-method reveal-typewriter">
+                            <h4>Email Us</h4>
+                            <a href="mailto:frankbediako38@gmail.com">frankbediako38@gmail.com</a>
                         </div>
 
-                        <div class="contact-method mb-md">
-                            <h4 class="reveal-typewriter" style="margin-bottom: 0.25rem;">Office Hours</h4>
-                            <p class="reveal-typewriter" style="color: var(--color-text-light);">Mon - Fri: 8:00 AM -
-                                5:00 PM<br>Sat: 9:00 AM -
-                                2:00 PM</p>
+                        <div class="contact-method reveal-typewriter">
+                            <h4>Office Hours</h4>
+                            <p>Mon - Fri: 8:00 AM - 5:00 PM<br>Sat: 9:00 AM - 2:00 PM</p>
                         </div>
                     </div>
 
-                    <!-- 
-                        CONTACT FORM (Right Column)
-                        Simple, no-fluff form.
-                    -->
+                    <!-- CONTACT FORM -->
                     <div class="contact-form-wrapper animate-on-scroll">
-                        <div class="card">
+                        <div class="card contact-form-card">
                             <h3 class="mb-md reveal-typewriter">Send a Message</h3>
 
-                            <!-- 
-                                FORM ACTION:
-                                Currently set to #. In production, this would point to a PHP script or Formspree endpoint.
-                            -->
                             <form action="#" method="POST" class="contact-form">
-
                                 <div class="form-group mb-md">
                                     <label for="name" class="form-label">Full Name</label>
                                     <input type="text" id="name" name="name" class="form-input"
@@ -168,8 +154,7 @@
 
                                 <button type="submit" class="btn btn--primary" style="width: 100%;">Send
                                     Message</button>
-                                <p
-                                    style="font-size: 0.8rem; color: var(--color-text-light); margin-top: var(--spacing-sm); text-align: center;">
+                                <p class="text-center mt-sm" style="font-size: 0.8rem; color: var(--color-text-light);">
                                     We respect your privacy. No spam.</p>
                             </form>
                         </div>

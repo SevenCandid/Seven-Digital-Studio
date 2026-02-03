@@ -1,0 +1,105 @@
+/* 
+    PAGES: CONTACT
+    Styles specifically for the contact page and its unique components.
+*/
+
+.contact-header {
+    padding: var(--spacing-xl) 0 var(--spacing-lg);
+    background: radial-gradient(circle at top right, var(--color-bg-alt), #f1f5f9);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: var(--spacing-xl);
+    align-items: start;
+}
+
+/* WhatsApp Glass Card */
+.whatsapp-card {
+    position: relative;
+    padding: var(--spacing-lg);
+    background: rgba(37, 211, 102, 0.03);
+    border: 1px solid rgba(37, 211, 102, 0.1);
+    border-left: 4px solid #25D366;
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--spacing-lg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.1);
+}
+
+.whatsapp-card h3 {
+    color: #075E54;
+    margin-bottom: var(--spacing-xs);
+}
+
+.whatsapp-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #25D366 !important;
+    border-color: #25D366 !important;
+    color: white !important;
+    width: 100%;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E !important;
+    transform: scale(1.02);
+}
+
+/* Contact Methods */
+.contact-method {
+    margin-bottom: var(--spacing-lg);
+}
+
+.contact-method h4 {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-light);
+    margin-bottom: 0.5rem;
+}
+
+.contact-method a,
+.contact-method p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.contact-method a:hover {
+    color: var(--color-accent);
+}
+
+/* Form Styles Override */
+.contact-form-card {
+    padding: var(--spacing-lg);
+    background: white;
+    box-shadow: var(--shadow-lg);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-header {
+        padding: var(--spacing-lg) 0;
+    }
+
+    .whatsapp-card {
+        padding: var(--spacing-md);
+    }
+}
