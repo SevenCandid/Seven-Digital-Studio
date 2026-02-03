@@ -33,5 +33,5 @@ Thumbs.db
 
 # Project specific
 tests/
-docs/
+# docs/
 # (Optional) If you want to keep docs on GitHub, comment the line above
