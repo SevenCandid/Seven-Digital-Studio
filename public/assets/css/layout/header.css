@@ -138,7 +138,8 @@
         background: rgba(255, 255, 255, 0.98);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
-        padding: 6rem var(--spacing-md) var(--spacing-md);
+        padding: 4rem var(--spacing-md) var(--spacing-md);
+        /* Reduced top padding */
 
         transform: translateX(100%);
         /* Slide from right */
@@ -157,7 +158,8 @@
     .main-nav__list {
         flex-direction: column;
         align-items: center;
-        gap: var(--spacing-md);
+        gap: var(--spacing-sm);
+        /* Reduced gap */
     }
 
     .main-nav__list li {
@@ -196,9 +198,10 @@
 
     .main-nav__link {
         display: block;
-        padding: 1rem 0;
-        font-size: 1.75rem;
-        /* Larger for better mobile presence */
+        padding: 0.75rem 0;
+        /* Reduced padding */
+        font-size: 1.25rem;
+        /* Reduced font size */
         font-family: var(--font-heading);
         font-weight: 700;
     }

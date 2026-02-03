@@ -141,11 +141,10 @@
     }
 }
 
-/* Disable effects on mobile for performance */
+/* Enable effects on mobile since the user requested interactive touch support */
 @media (max-width: 768px) {
-
-    .cursor-dot,
     .floating-shape {
         display: none;
+        /* Keep heavy shapes hidden if needed, or remove this to show them too */
     }
 }
