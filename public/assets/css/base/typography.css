@@ -6,7 +6,12 @@ body {
     font-size: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-heading);
     color: var(--color-primary);
     font-weight: 700;
@@ -15,16 +20,63 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: -0.02em;
 }
 
-h1 { font-size: 2.75rem; } /* ~44px */
-h2 { font-size: 2.25rem; } /* ~36px */
-h3 { font-size: 1.5rem; }  /* ~24px */
+h1 {
+    font-size: 2.75rem;
+}
+
+/* ~44px */
+h2 {
+    font-size: 2.25rem;
+}
+
+/* ~36px */
+h3 {
+    font-size: 1.5rem;
+}
+
+/* ~24px */
 
 p {
     margin-bottom: var(--spacing-md);
-    max-width: 65ch; /* Readable line length */
+    max-width: 65ch;
+    /* Readable line length */
 }
+
 .lead {
     font-size: 1.25rem;
     color: var(--color-text-light);
     font-weight: 400;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.35rem;
+    }
+
+    .lead {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: 1.85rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
 }
