@@ -39,8 +39,9 @@ export function initImageAlive() {
         const handleLeave = () => {
             const parallaxOffset = img.style.getPropertyValue('--parallax-offset') || '0px';
             img.style.transform = `translateY(${parallaxOffset}) rotateX(0deg) rotateY(0deg) scale(1)`;
+            img.style.filter = "none";
             img.style.boxShadow = "none";
-            img.style.transition = "transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.5s ease";
+            img.style.transition = "transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.5s ease, filter 0.5s ease";
         };
 
         // Desktop

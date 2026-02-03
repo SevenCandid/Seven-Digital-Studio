@@ -20,12 +20,11 @@ export function initHeaderScroll() {
         if (currentScroll <= 100) {
             header.classList.remove('site-header--hidden');
         } else {
-            // USER REQUEST: "vanish only on scroll up and reappears as soon as scroll down starts"
-            if (currentScroll < lastScrollTop) {
-                // Scrolling UP (towards top) -> HIDE
+            if (currentScroll > lastScrollTop) {
+                // Scrolling DOWN (towards bottom) -> HIDE
                 header.classList.add('site-header--hidden');
             } else {
-                // Scrolling DOWN (towards bottom) -> SHOW
+                // Scrolling UP (towards top) -> SHOW
                 header.classList.remove('site-header--hidden');
             }
         }
