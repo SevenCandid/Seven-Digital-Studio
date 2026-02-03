@@ -15,6 +15,8 @@ import { initHeroEffects } from './modules/heroEffects.js';
 import { initLoader } from './modules/loader.js';
 import { initParallax } from './modules/parallax.js';
 import { initMagneticButtons } from './modules/magnetic.js';
+import { initHeaderScroll } from './modules/headerScroll.js';
+import { initImageAlive } from './modules/imageAlive.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("SEVEN Digital Studio: App Initialized");
@@ -29,7 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
     { name: 'Animations', init: initAnimations },
     { name: 'HeroEffects', init: initHeroEffects },
     { name: 'Parallax', init: initParallax },
-    { name: 'MagneticButtons', init: initMagneticButtons }
+    { name: 'MagneticButtons', init: initMagneticButtons },
+    { name: 'HeaderScroll', init: initHeaderScroll },
+    { name: 'ImageAlive', init: initImageAlive }
   ];
 
   modules.forEach(module => {
