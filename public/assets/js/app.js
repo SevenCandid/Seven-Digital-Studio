@@ -15,8 +15,9 @@ import { initHeroEffects } from './modules/heroEffects.js';
 import { initLoader } from './modules/loader.js';
 import { initParallax } from './modules/parallax.js';
 import { initMagneticButtons } from './modules/magnetic.js';
-import { initHeaderScroll } from './modules/headerScroll.js';
+// import { initHeaderScroll } from './modules/headerScroll.js'; // Disabled for sticky behavior
 import { initImageAlive } from './modules/imageAlive.js';
+import { initTheme } from './modules/theme.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("SEVEN Digital Studio: App Initialized");
@@ -26,13 +27,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Initialize modules with error safety
   const modules = [
+    { name: 'Theme', init: initTheme },
     { name: 'Navigation', init: initNavigation },
     { name: 'Typewriter', init: initTypewriter },
     { name: 'Animations', init: initAnimations },
     { name: 'HeroEffects', init: initHeroEffects },
     { name: 'Parallax', init: initParallax },
     { name: 'MagneticButtons', init: initMagneticButtons },
-    { name: 'HeaderScroll', init: initHeaderScroll },
+    // { name: 'HeaderScroll', init: initHeaderScroll },
     { name: 'ImageAlive', init: initImageAlive }
   ];
 

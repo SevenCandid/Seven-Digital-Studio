@@ -4,42 +4,36 @@
      * Theme: Professional, Clean, Trustworthy
      */
 
-    /* Colors: Slate & Royal Blue */
+    /* Colors: Slate & Royal Blue (Light Mode) */
     --color-primary: #0F172A;
-    /* Deep Slate - Headings, Footer, Strong brand elements */
+    /* Deep Slate - Headings */
     --color-primary-light: #1E293B;
     --color-accent: #2563EB;
-    /* Royal Blue - CTAs, Links, Active States */
+    /* Royal Blue */
     --color-accent-hover: #1D4ED8;
 
     --color-bg: #FFFFFF;
-    /* Main background */
     --color-bg-alt: #F8FAFC;
-    /* Secondary background (Slate 50) */
+    /* Slate 50 */
+    --color-bg-card: #FFFFFF;
 
     --color-text: #334155;
-    /* Slate 700 - Body Text (softer than black) */
+    /* Slate 700 */
     --color-text-light: #64748B;
-    /* Slate 500 - Meta text */
+    /* Slate 500 */
     --color-text-inv: #FFFFFF;
-    /* Inverted text */
 
     --color-border: #E2E8F0;
-    /* Slate 200 - Borders */
+    /* Slate 200 */
+    --color-border-glow: transparent;
 
-    /* Spacing: 4px Grid System */
+    /* Spacing */
     --spacing-xs: 0.5rem;
-    /* 8px */
     --spacing-sm: 1rem;
-    /* 16px */
     --spacing-md: 1.5rem;
-    /* 24px */
     --spacing-lg: 3rem;
-    /* 48px */
     --spacing-xl: 5rem;
-    /* 80px */
     --spacing-2xl: 8rem;
-    /* 128px */
 
     /* Typography */
     --font-heading: 'Outfit', sans-serif;
@@ -55,12 +49,50 @@
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-glow: none;
 
-    /* 
-     * Breakpoints (Reference Only)
-     * Mobile: Default
-     * Tablet: 768px
-     * Desktop: 1024px
-     * Container: 1200px
-     */
+    /* Transitions */
+    --transition-theme: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 
+ * DARK MODE: AI / Tech Vibe
+ * Palette: Deep Cosmic Blue, Electric Violet, Cyan, Glowing effects
+ */
+[data-theme="dark"] {
+    --color-primary: #F8FAFC;
+    /* White Text */
+    --color-primary-light: #E2E8F0;
+    /* Light Slate */
+
+    --color-accent: #8B5CF6;
+    /* Electric Violet */
+    --color-accent-hover: #A78BFA;
+    /* Lighter Violet */
+
+    --color-bg: #030712;
+    /* Rich Black/Blue */
+    --color-bg-alt: #0F172A;
+    /* Deep Slate */
+    --color-bg-card: rgba(15, 23, 42, 0.6);
+    /* Glassy Card */
+
+    --color-text: #CBD5E1;
+    /* Slate 300 */
+    --color-text-light: #94A3B8;
+    /* Slate 400 */
+    --color-text-inv: #0F172A;
+
+    --color-border: #1E293B;
+    /* Slate 800 */
+    --color-border-glow: rgba(139, 92, 246, 0.5);
+    /* Violet Glow */
+
+    /* Shadows with Color */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.8);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.8), 0 2px 4px -2px rgba(0, 0, 0, 0.8);
+    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.8), 0 10px 10px -5px rgba(0, 0, 0, 0.8);
+    --shadow-glow: 0 0 20px -5px rgba(139, 92, 246, 0.4);
 }

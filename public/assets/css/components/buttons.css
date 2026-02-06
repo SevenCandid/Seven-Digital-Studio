@@ -7,27 +7,37 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.75rem 1.5rem;
+    padding: 0.875rem 2rem;
     font-family: var(--font-heading);
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1rem;
-    line-height: 1;
+    line-height: 1.2;
     text-decoration: none;
-    border-radius: var(--radius-sm);
-    transition: all 0.2s ease;
+    border-radius: var(--radius-full);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     border: 2px solid transparent;
+    letter-spacing: 0.01em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
 
-/* Primary Button (Blue) */
+/* Primary Button (Blue Gradient) */
 .btn--primary {
-    background-color: var(--color-accent);
+    background: var(--color-accent);
+    background: linear-gradient(135deg, var(--color-accent) 0%, #1d4ed8 100%);
     color: white;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.3), 0 2px 4px -1px rgba(37, 99, 235, 0.15);
 }
+
 .btn--primary:hover {
-    background-color: var(--color-accent-hover);
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.4), 0 4px 6px -2px rgba(37, 99, 235, 0.2);
+}
+
+.btn--primary:active {
+    transform: translateY(0);
 }
 
 /* Outline Button (Slate Border) */
@@ -36,10 +46,12 @@
     border-color: var(--color-primary);
     color: var(--color-primary);
 }
+
 .btn--outline:hover {
     background-color: var(--color-primary);
     color: white;
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.3);
 }
 
 /* Ghost/Text Button */
@@ -48,19 +60,25 @@
     color: var(--color-accent);
     padding-left: 0;
     padding-right: 0;
+    border-radius: 0;
 }
+
 .btn--ghost:hover {
     color: var(--color-accent-hover);
     text-decoration: underline;
+    background: transparent;
+    box-shadow: none;
+    transform: none;
 }
 
 /* Sizes */
 .btn--sm {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.25rem;
     font-size: 0.875rem;
 }
 
 .btn--lg {
-    padding: 1rem 2rem;
+    padding: 1.125rem 2.5rem;
     font-size: 1.125rem;
+    font-weight: 700;
 }

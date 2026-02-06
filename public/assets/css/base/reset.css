@@ -17,6 +17,11 @@ body {
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    transition: var(--transition-theme);
+    padding-top: 5rem;
+    /* Space for fixed header */
 }
 
 img,
